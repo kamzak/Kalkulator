@@ -151,6 +151,9 @@ a:focus{
     box-shadow: 11px 15px 16px -10px rgba(0,0,0,0.75);
 
 }
+#powrot1 {
+	text-decoration: none;
+}
 #wroc1:hover{
     background-color: #008CBA;
 }
