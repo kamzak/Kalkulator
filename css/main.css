@@ -137,7 +137,7 @@ a:focus{
     font-weight: bold;
 }
 #wroc1 {
-    text-underline: none;
+    text-decoration: none;
     display: none;
     cursor: pointer;
     font-size: 11px;
