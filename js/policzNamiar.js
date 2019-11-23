@@ -30,7 +30,7 @@ function podajNamiar(){
                     tab[2][2] * tab[0][1] * masaC);
         }
         var wyznX = wyznacznikSurowki(tab);
-        logWyniku += "Wyznacznik macierzy dla surowki detX = "+ wyznX + "<br>";
+        logWyniku += "Wyznacznik macierzy dla surówki detX = "+ wyznX + "<br>";
 
         function wyznacznikZlomu(tab) {
             return (tab[0][0] * masaC * tab[2][2] +
@@ -59,15 +59,15 @@ function podajNamiar(){
         var z = wyznZ/wyznGl;
 
         logWyniku += "<br>Przy założeniu namiaru <b>" + namiar + "</b> gram, <b>" +
-            + wegiel+"% C</b>, oraz <b>"+ krzem + "% Si:</b><br><br>";
+            + wegiel+"% C</b> oraz <b>"+ krzem + "% Si:</b><br><br>";
         logWyniku += "Namiar: " + namiar + "g, <br>"+
             "Węgiel : " + masaC.toFixed(2) + "g, " + "<br>"+
             "Krzem: " + masaSi.toFixed(2) + "g, " + "<br>";
 
         logWyniku += "<br>Wynik (zaokrąglony do 2 miejsc po przecinku): <br>";
-        logWyniku += "<p id='x'>" + "x (surówka) = <b>" + x.toFixed(2) + " g</b></p>";
-        logWyniku += "<p id='y'>" + "y (złom stalowy) = <b>" + y.toFixed(2) + " g</b></p>";
-        logWyniku += "<p id='z'>" + "z (krzem) = <b>" + z.toFixed(2) + " g</b></p>";
+        logWyniku += "<p class='final'>" + "x (surówka) = <b>" + x.toFixed(2) + " g</b></p>";
+        logWyniku += "<p class='final'>" + "y (złom stalowy) = <b>" + y.toFixed(2) + " g</b></p>";
+        logWyniku += "<p class='final'>" + "z (krzem) = <b>" + z.toFixed(2) + " g</b></p>";
         logWyniku += "<p id='namiarFinal'>Co daje łącznie: " + namiar + " g<br> [" + namiar/1000 + " kg]</p><br>";
         logWyniku += "---------------------------------------------------------------<br>";
 
@@ -76,6 +76,11 @@ function podajNamiar(){
         wT.innerHTML = "Wynik";
         var w = document.getElementById("wynik");
         w.innerHTML = logWyniku;
+
+        if(x < 0|| y < 0|| z < 0) {
+            alert("Dla podanych danych nie da się obliczyć namiaru.");
+            location.reload();
+        }
 
 
     } else {
