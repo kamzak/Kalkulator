@@ -22,19 +22,19 @@
     <td><b>Krzem</b></td>
   </tr>
   <tr>
-    <td>C</td>
+    <td><b>C</b></td>
     <td>4.32</td>
     <td>0.28</td>
     <td>0</td>
   </tr>
   <tr>
-    <td>Si</td>
+    <td><b>Si</b></td>
     <td>0.79</td>
     <td>0.02</td>
     <td>98.5</td>
   </tr>
   <tr>
-    <td>Fe</td>
+    <td><b>Fe</b></td>
     <td>94.89</td>
     <td>99.7</td>
     <td>1.5</td>
@@ -53,9 +53,9 @@ Podaj udział krzemu [%] :
 <input type="text" id="krzem" value="2"><br><br>
 <br><br>
 
-<button id="policz" onclick="podajNamiar()">Policz namiar</button>
+<a href="#footer"><button id="policz" onclick="podajNamiar(); pokazWroc()">Policz namiar</button></a>
 
-<button id="pokaz" onclick="pokaMacierz()">Pokaż macierz</button>
+<a href="#macGlowna"><button id="pokaz" onclick="pokaMacierz()">Pokaż macierz</button></a>
 <button id="clear" onclick="wyczysc()">Wyczyść</button>
 
 <br><br><br>
@@ -90,14 +90,19 @@ Podaj udział krzemu [%] :
     <td id="dwa3"></td>
   </tr>
 </table>
+<br><br>
+<a href="#logo"><button id="wroc1">Wróc do strony głównej</button></a>
 
 
-<script src="js/policzNamiar.js"></script>
-<script src="js/pokazMacierz.js"></script>
 <p id="tekstWynik"></p>
 <p id="wynik"></p>
-<br><br><br><br><br><br><br>
+<br><br>
+
+<br><br><br><br><br>
+<script src="js/policzNamiar.js"></script>
+<script src="js/pokazMacierz.js"></script>
 <p id="footer">Copyright &copy 2019 by Kamil Żak, Wydział Odlewnictwa, KWPI</p>
+<a href="#logo" id="wroc2">Wróc do strony głównej</a>
 </body>
 
 </html>

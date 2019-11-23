@@ -66,7 +66,6 @@ table, th, td{
     font-weight: 500;
 }
 #footer {
-    height: 50px;
     text-align: center;
     padding: 5px;
 }
@@ -81,6 +80,7 @@ table, th, td{
 }
 #policz:hover, #pokaz:hover, #clear:hover{
     background-color: #008CBA;
+    cursor: pointer;
 }
 #policz, #pokaz {
     margin-right: 20px;
@@ -132,4 +132,36 @@ table, th, td{
     text-align: center;
     color: #005691;
     font-weight: bold;
+}
+#wroc1 {
+    text-underline: none;
+    display: none;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    color: #E8F1F5;
+    background-color: #005691;
+    padding: 15px;
+    margin: 0 auto;
+    -webkit-box-shadow: 11px 15px 16px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 15px 16px -10px rgba(0,0,0,0.75);
+    box-shadow: 11px 15px 16px -10px rgba(0,0,0,0.75);
+
+}
+#wroc1:hover{
+    background-color: #008CBA;
+}
+
+#wroc2{
+    display: block;
+    font-size: 11px;
+    cursor: pointer;
+    margin: 0 auto;
+    color: #005691;
+    text-decoration: none;
+}
+#wroc2:hover {
+    color: wheat;
+    background-color: #005691;
+    width: 130px;
 }

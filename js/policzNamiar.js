@@ -77,6 +77,7 @@ function podajNamiar(){
         var w = document.getElementById("wynik");
         w.innerHTML = logWyniku;
 
+
     } else {
         alert("Wpisz wszystkie dane!");
     }
@@ -85,5 +86,4 @@ function podajNamiar(){
 function wyczysc() {
     location.reload();
 }
-
 

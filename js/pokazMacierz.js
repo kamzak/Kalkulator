@@ -31,14 +31,17 @@ function pokaMacierz() {
         var tekstMacierzy = document.getElementById("pokaz");
         var pokazTabele = document.getElementById("tabelaMacierzy");
         var pokazNapis = document.getElementById("macGlowna");
+        var pokazWroc = document.getElementById("wroc1");
 
         if(pokazTabele.style.display === 'block') {
             pokazTabele.style.display = 'none';
             pokazNapis.style.display = 'none';
+            pokazWroc.style.display = 'none';
             tekstMacierzy.innerText = "Pokaż macierz";
         } else {
             pokazTabele.style.display = 'block';
             pokazNapis.style.display = 'block';
+            pokazWroc.style.display = 'block';
             tekstMacierzy.innerText = "Ukryj macierz";
         }
     }
