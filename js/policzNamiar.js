@@ -19,7 +19,7 @@ function podajNamiar(){
                     tab[2][2] * tab[0][1] * tab[1][0]);
         }
         var wyznGl = wyznacznikGlowny(tab);
-        logWyniku += "Wyznacznik główny det = "+ wyznGl + "<br>";
+        logWyniku += "<br>Wyznacznik główny det = "+ wyznGl + "<br>";
 
         function wyznacznikSurowki(tab) {
             return (namiar * tab[1][1] * tab[2][2] +
@@ -69,7 +69,7 @@ function podajNamiar(){
         logWyniku += "<p id='y'>" + "y (złom stalowy) = <b>" + y.toFixed(2) + " g</b></p>";
         logWyniku += "<p id='z'>" + "z (krzem) = <b>" + z.toFixed(2) + " g</b></p>";
         logWyniku += "<p id='namiarFinal'>Co daje łącznie: " + namiar + " g<br> [" + namiar/1000 + " kg]</p><br>";
-        logWyniku += "---------------------------------------------------------------<br><br><br>";
+        logWyniku += "---------------------------------------------------------------<br>";
 
         var wT = document.getElementById("tekstWynik");
         wT.style.display = 'block';
